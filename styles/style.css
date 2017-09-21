@@ -13,9 +13,10 @@ p {
 
 
 #container {
-  width: 400px;
-  height: 400px;
+  max-width: 560px;
+  max-height: 560px;
   margin: auto;
+  overflow: hidden;
 }
 
 #parameters {
@@ -38,8 +39,10 @@ p {
   border: .5px;
   border-style: solid;
   border-color: black;
-  height: 25px;
-  width: 25px;
+  max-height: auto;
+  max-width: auto;
+  height: 35px;
+  width: 35px;
   float: left;
 }
 
