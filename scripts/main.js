@@ -1,6 +1,7 @@
 $(document).ready(function() {
   createGrid(16);
-  mouseColor();
+  mouseBlack();
+
 });
 
 
@@ -12,18 +13,32 @@ function createGrid(gridSize) {
   };
 };
 
-function mouseColor() {
+function mouseBlack() {
   $('.pixel').on('mouseenter', function() {
     $(this).addClass('pixelBlack');
   });
 };
 
+function mouseRGB() {};
+
+
+function mouseGrayscale() {
+  $('.pixel').on('mouseenter', function() {
+    var currentOpacity = $(this).css("opacity");
+    if(currentOpacity >= 1)
+      return currentOpacity
+    else
+      return currentOpacity + 0.10
+    $(this).css("opacity", "currentOpacity");
+
+
+  });
+};
+
 function clearCreate() {
   $('.pixel').remove();
-  var gridSize = prompt("Please enter a number", "16")
+  var gridSize = prompt("Please enter a number", "16");
   createGrid(gridSize);
-  mouseColor();
-  $('.pixel').width((800 / gridSize)-1);
-  $('.pixel').height((800  / gridSize)-1);
-
+  $('.pixel').width((560 / gridSize)-1);
+  $('.pixel').height((560  / gridSize)-1);
 };
