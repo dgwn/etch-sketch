@@ -23,6 +23,8 @@ function mouseRGB() {};
 
 
 function mouseGrayscale() {
+  $('.pixel').css('background-color', 'black');
+  $('.pixel').css('border-radius', 1);
   $('.pixel').on('mouseenter', function() {
     var currentOpacity = $(this).css("opacity");
     console.log(currentOpacity);
