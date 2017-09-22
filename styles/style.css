@@ -6,7 +6,7 @@ html {
 
 h1 {
   position: relative;
-  top: -40;
+  top: 0;
   text-align: center;
   color: rgb(255, 209, 45);
   text-shadow: 1px 2px rgb(68, 61, 36);
@@ -20,7 +20,7 @@ p {
 
 button {
   position: relative;
-  top: -80px;
+  top: -40px;
   padding: 8px;
   font-weight: bold;
   border-radius: 5px;
@@ -30,7 +30,7 @@ button {
 
 #container {
   position: relative;
-  top: -75px;
+  top: -35px;
   max-width: 560px;
   max-height: 560px;
   border-style: double;
