@@ -25,11 +25,12 @@ function mouseRGB() {};
 function mouseGrayscale() {
   $('.pixel').on('mouseenter', function() {
     var currentOpacity = $(this).css("opacity");
-    if(currentOpacity >= 1)
+    console.log(currentOpacity);
+    if(currentOpacity === 0)
       return currentOpacity
     else
-      return currentOpacity + 0.10
-    $(this).css("opacity", "currentOpacity");
+      currentOpacity -= 0.10
+    $(this).css("opacity", currentOpacity);
 
 
   });
