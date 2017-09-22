@@ -19,7 +19,15 @@ function mouseBlack() {
   });
 };
 
-function mouseRGB() {};
+function mouseRGB() {
+  $('.pixel').on('mouseenter', function() {
+    var r = Math.floor(Math.random()*256);
+    var g = Math.floor(Math.random()*256);
+    var b = Math.floor(Math.random()*256);
+    var randomRGB = 'rgb(' + r + ',' + g + ',' + b + ')';
+    $(this).css('background-color', randomRGB)
+  });
+};
 
 
 function mouseGrayscale() {
