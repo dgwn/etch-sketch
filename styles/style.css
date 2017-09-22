@@ -1,24 +1,44 @@
 html {
   font-family: 'Roboto';
   display: inline;
+  background-color: rgb(234, 68, 68);
 }
 
 h1 {
+  position: relative;
+  top: -40;
   text-align: center;
+  color: rgb(255, 209, 45);
+  text-shadow: 1px 2px rgb(68, 61, 36);
+  font-family: 'Sirin Stencil';
+  font-size: 50px;
 }
 
 p {
   text-align: center;
 }
 
+button {
+  position: relative;
+  top: -80px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
 
 #container {
+  position: relative;
+  top: -75px;
   max-width: 560px;
   max-height: 560px;
   border-style: double;
   border-color: black;
+  border-width: thick;
   margin: auto;
   overflow: hidden;
+  background-color: rgb(237, 237, 237);
 }
 
 #parameters {
@@ -37,7 +57,7 @@ p {
 
 .pixel {
   box-sizing: border-box;
-  background-color: white;
+  background-color: rgb(237, 237, 237);
   border: .5px;
   border-style: solid;
   border-color: black;
