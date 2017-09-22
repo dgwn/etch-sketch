@@ -31,7 +31,7 @@ function mouseGrayscale() {
     if(currentOpacity === 0)
       return currentOpacity
     else
-      currentOpacity -= 0.10
+      currentOpacity -= 0.15
     $(this).css("opacity", currentOpacity);
 
 
